@@ -11,4 +11,5 @@ type Player interface {
 	Forward() error
 	Backward() error
 	Subtitles() error
+	IsPlaying() bool
 }

@@ -1,7 +1,9 @@
 package store
 
+import "murrpy/model"
+
 // Store interface
 type Store interface {
-	Get()
-	Set()
+	Get(hash string) *model.Media
+	Set(m *model.Media)
 }
